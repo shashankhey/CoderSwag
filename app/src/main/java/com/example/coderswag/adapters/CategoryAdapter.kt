@@ -7,13 +7,10 @@ import android.view.ViewGroup
 import android.widget.BaseAdapter
 import android.widget.ImageView
 import android.widget.TextView
-import androidx.databinding.library.baseAdapters.R
 import com.example.coderswag.model.Category
 
-class CategoryAdapter(context: Context, categories: List<Category>) : BaseAdapter() {
+class CategoryAdapter(val context: Context, val categories: List<Category>) : BaseAdapter() {
 
-    val context = context
-    val categories = categories
     override fun getCount(): Int {
         return categories.count()
     }
